@@ -3,17 +3,53 @@ body {
    justify-content: center;
    align-items: center;
    height: 100vh;
+   margin: 0;
  }
  
  .carousel {
-   display: flex;
-   overflow: hidden;
-   width: 500px;
+   width: 650px;
    height: 400px;
+   overflow: hidden;
  }
  
- .carousel img {
+ .carousel-container {
+   display: flex;
+   transition: transform 0.5s ease;
+ }
+ 
+ .carousel-item {
+   flex: 0 0 100%;
+ }
+ 
+ .carousel-item img {
    width: 100%;
-   height: 100%;
+   height: 300px;
    object-fit: cover;
+ }
+ 
+ .carousel-prev,
+ .carousel-next {
+   position: absolute;
+   left: 50%;
+   transform: translateX(-50%);
+   width: 25px;
+   height: 25px;
+   border-radius: 50%;
+   font-size: 20px;
+   color: white;
+   background-color: rgba(0, 0, 0, 0.5);
+   padding: 0;
+   text-decoration: none;
+   cursor: pointer;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+ 
+ .carousel-prev {
+   top: 170px;
+ }
+ 
+ .carousel-next {
+   bottom: 270px;
  }
