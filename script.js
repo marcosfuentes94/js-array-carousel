@@ -14,6 +14,6 @@ function changeSlide(direction) {
   } else if (currentIndex >= carouselItems.length) {
     currentIndex = 0;
   }
-// SPOSTA IL CONTENITORE DEL CAROUSEL PER VISUALIZZARE LE SLIDE ORIZZONTALMENTE
-  carouselContainer.style.transform = `translateX(-${currentIndex * 100}%)`; 
+// SPOSTA IL CONTENITORE DEL CAROUSEL PER VISUALIZZARE LE SLIDE VERTICALMENTE
+  carouselContainer.style.transform = `translateY(-${currentIndex * 20}%)`; 
 }
